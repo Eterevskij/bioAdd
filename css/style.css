@@ -1,0 +1,447 @@
+@font-face {
+    font-family: 'Lato bold';
+    src: url('../fonts/Lato-Bold.woff2') format('woff2'),
+        url('../fonts/Lato-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Myriad Pro';
+    src: url('../fonts/MyriadPro-Regular.woff2') format('woff2'),
+        url('../fonts/MyriadPro-Regular.woff') format('woff');
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Lato Light';
+    src: url('../fonts/Lato-Light.woff2') format('woff2'),
+        url('../fonts/Lato-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Raleway Bold';
+    src: url('../fonts/Raleway-Bold.woff2') format('woff2'),
+        url('../fonts/Raleway-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Raleway light';
+    src: url('Raleway-Light.woff2') format('woff2'),
+        url('Raleway-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Lato Black';
+    src: url('../fonts/Lato-Black.woff2') format('woff2'),
+        url('../fonts/Lato-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Lato LightItalic';
+    src: url('../fonts/Lato-LightItalic.woff2') format('woff2'),
+        url('../fonts/Lato-LightItalic.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+
+
+body {
+    margin: 0;
+    font-family: 'Lato Light';
+    background: #fafbfc;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+
+button {
+    border: none;
+}
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.header {
+    background: url(../img/bg/headerBG.png) right center no-repeat;
+}
+
+.menu {
+    padding: 27px 15px;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: space-between;
+    -ms-align-items: center;
+    align-items: center;
+    border-bottom: 1px solid #eaeaea;
+}
+
+.header__videoSVG {
+    fill: #5ea1da;
+    display: inline-block;
+}
+
+.menuLogo {
+    width: 30px;
+}
+
+.headerScreen {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: space-between;
+    -ms-align-items: center;
+    align-items: center;
+    margin-top: 180px;
+}
+
+.headerScreen__text {
+    max-width: 390px;
+}
+
+.headerTitle {
+    font-family: 'Myriad Pro';
+    position: relative;
+    padding-left: 30px;
+}
+
+.headerTitle::before {
+    margin-left: -30px;
+    margin-top: 15px;
+    position: absolute;
+    width: 5px;
+    height: 95px;
+    background: #5ea2da;
+    border-radius: 3px;
+    content: "";
+    display: inline-block;
+}
+
+.headerTitle h1 {
+    font-size: 72px;
+    color: #373a42;
+    text-transform: uppercase;
+}
+
+.headerTitle span {
+    display: inline-block;
+    transform: translateY(-52px);
+    font-size: 24px;
+}
+
+.headersubTitle {
+    color: #666666;
+}
+
+.headerScreen__buttons {
+    margin-top: 50px;
+}
+
+.headerScreen__buttons button {
+    text-transform: uppercase;
+    width: 180px;
+    height: 50px;
+}
+
+.headerScreen__buttons__order {
+    color: #f1f1f1;
+    background: #5ea2da;
+    border-radius: 20px;
+}
+
+.headerScreen__buttons__videoAboutUs {
+    background: transparent;
+}
+
+.header__videoSVG {
+    margin-left: 5px;
+    width: 25px;
+}
+
+#pillsContents {
+    padding-bottom: 120px;
+
+    margin-top: 100px;
+    max-height: 350px;
+    width: 100%;
+    background: rgb(36, 29, 46);
+    background: linear-gradient(90deg, rgba(36, 29, 46, 1) 0%, rgba(21, 17, 28, 1) 100%);
+}
+
+.pillsContentsStat {
+    display: inline-block;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: space-between;
+    width: 780px;
+    float: right;
+    -ms-align-items: center;
+    transform: translateY(50%);
+}
+
+.pillsContents__jar {
+    transform: translateY(-90px)
+}
+
+.pillsContentsStat__item {
+    position: relative;
+    vertical-align: center
+}
+
+.pillsContentsStat__num {
+    font-family: 'Lato Black';
+    color: #fff;
+    font-size: 72px;
+    margin-left: 20px;
+}
+
+.pillsContentsStat__num::before {
+    margin-left: -19px;
+    margin-top: 12px;
+    position: absolute;
+    width: 5px;
+    height: 60px;
+    background: #5ea2da;
+    border-radius: 3px;
+    content: "";
+    display: inline-block;
+}
+
+.pillsContentsStat__mesure {
+    color: #5ea1da;
+    font-family: 'Lato bold';
+    transform: translateY(-10px);
+    text-transform: uppercase;
+
+}
+
+.pillsContentsStat__in {
+    color: #a7a7a7;
+    font-family: 'Lato Light';
+    transform: translateY(-25px);
+}
+
+#weSuggest {
+    margin-top: 120px;
+    background: #fafcfc;
+    background: url(../img/weSuggestIMG.png) no-repeat center bottom;
+    padding-bottom: 65px;
+}
+
+.advantages {
+    margin-top: 100px;
+    max-width: 1005px;
+    margin: 110px auto;
+}
+
+.weSuggest__title {
+    color: #373a42;
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Myriad Pro';
+}
+
+.advantages__wrap {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: space-between;
+}
+
+.advantages__wrap+.advantages__wrap {
+    margin-top: 80px;
+}
+
+.advantagesItem {
+    max-width: 260px;
+}
+
+.advantagesItem__title {
+    color: #373a42;
+    font-size: 20px;
+    font-family: 'Raleway Bold';
+}
+
+.advantagesLeft .advantagesItem__title,
+.advantagesLeft .advantagesItem__discription {
+    float: right;
+}
+
+.advantagesLeft .advantagesItem__title {
+    transform: translateX(-35px);
+}
+
+.advantagesLeft .advantagesItem__title::after {
+    margin-left: 15px;
+    margin-top: -5px;
+    position: absolute;
+    width: 5px;
+    height: 35px;
+    background: #5ea2da;
+    border-radius: 3px;
+    content: "";
+    display: inline-block;
+}
+
+.advantagesRight .advantagesItem__title {
+    transform: translateX(15px);
+}
+
+.advantagesRight .advantagesItem__title::before {
+    margin-left: -15px;
+    margin-top: -5px;
+    position: absolute;
+    width: 5px;
+    height: 35px;
+    background: #5ea2da;
+    border-radius: 3px;
+    content: "";
+    display: inline-block;
+}
+
+.slider {
+    margin-top: 75px;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: center;
+}
+
+.slider div {
+    width: 810px;
+}
+
+
+.slider__item__userPhoto {
+    width: 70px;
+    border-radius: 50%;
+    float: right;
+}
+
+.slider__item__text {
+    font-family: 'Lato LightItalic';
+    color: #a7a7a7;
+    text-align: center;
+}
+
+#feedback {
+	padding-top: 120px;
+	padding-bottom: 120px;
+    background: #1c1724;
+}
+
+.feedbackTitle {
+    color: #e5e5e5;
+    text-transform: uppercase;
+    font-size: 30px;
+    text-align: center;
+
+}
+
+.feedbackTitle__reviews {
+    font-family: 'Raleway light';
+    padding-left: 30px
+}
+
+.feedbackTitle__clients {
+    font-family: 'Myriad Pro';
+	padding-right: 30px;
+}
+
+.feedbackVerticalLine {
+    display: inline-block;
+    vertical-align: center;
+    height: 40px;
+    width: 1px;
+    background: #5ea2da;
+    transform: translateY(8px);
+}
+
+.user {
+	margin-top: 30px;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: center;
+    color: #fff;
+}
+
+.slider__item__name {
+    text-transform: uppercase;
+    font-family: 'Raleway Bold';
+}
+
+.slider__item__location {
+    color: #a7a7a7;
+    font-family: 'Lato Light';
+}
+
+.slick-dots{
+	transform: translateY(25px);
+}
+
+.slick-dots li {
+    width: 10px;
+    height: 10px;
+    width: 10px;
+    height: 10px;
+    background: #36323c;
+    border-radius: 50%;
+}
+
+li.slick-active {
+    background: #5ea2da;
+}
+
+.slider__item__location {
+    color: #a7a7a7;
+}
+
+.user__text {
+    margin-left: 30px;
+}
+
+.user__text::after {
+    margin-top: -10px;
+    position: absolute;
+    width: 35px;
+    height: 5px;
+    background: #5ea2da;
+    border-radius: 3px;
+    content: "";
+    display: inline-block;
+}
